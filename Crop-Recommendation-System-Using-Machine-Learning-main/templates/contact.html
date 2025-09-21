@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - AgriTech AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    :root {
+      --primary-green: #2e7d32;
+      --dark-green: #1b5e20;
+      --light-green: #4caf50;
+      --bg-dark: #0a0a0a;
+      --bg-secondary: #1a1a1a;
+      --bg-card: #151515;
+      --text-light: #e0e0e0;
+    }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-secondary) 100%);
+      color: var(--text-light);
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background: rgba(21, 21, 21, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--primary-green);
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', monospace;
+      font-weight: 700;
+      color: var(--light-green) !important;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: var(--text-light) !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--light-green) !important;
+    }
+
+    .main-content {
+      padding-top: 100px;
+      min-height: 100vh;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--primary-green);
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .contact-header h1 {
+      font-family: 'Orbitron', monospace;
+      color: var(--light-green);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: rgba(46, 125, 50, 0.1);
+      border-radius: 10px;
+      border-left: 4px solid var(--primary-green);
+    }
+
+    .contact-item i {
+      font-size: 1.5rem;
+      color: var(--light-green);
+      margin-right: 1rem;
+      width: 30px;
+      text-align: center;
+    }
+
+    .contact-item h5 {
+      color: var(--light-green);
+      margin-bottom: 0.5rem;
+    }
+
+    .social-links a {
+      color: var(--text-light);
+      font-size: 1.5rem;
+      margin: 0 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--light-green);
+      transform: translateY(-2px);
+    }
+
+    .btn-back {
+      background: var(--primary-green);
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: var(--dark-green);
+      color: white;
+      transform: translateY(-2px);
+    }
+  </style>
+  <body>
+    <!--=======================navbar=====================================================-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <i class="fas fa-seedling"></i> AgriTech AI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tracking"><i class="fas fa-chart-line"></i> Tracking</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="container">
+        <div class="contact-header">
+          <h1><i class="fas fa-envelope"></i> Contact Information</h1>
+          <p class="lead">Get in touch with the development team</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card">
+              <h3 class="text-center mb-4" style="color: var(--light-green);">Developer Contact</h3>
+              
+              <div class="contact-item">
+                <i class="fas fa-user"></i>
+                <div>
+                  <h5>Developer</h5>
+                  <p class="mb-0">Nephy Ndwiga</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p class="mb-0">nndwiga@usiu.ac.ke</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h5>Phone</h5>
+                  <p class="mb-0">+254 705515979</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-university"></i>
+                <div>
+                  <h5>Institution</h5>
+                  <p class="mb-0">United States International University - Africa (USIU-Africa)</p>
+                  <small>Course: DSA4900 - Data Science Project | Student ID: 666739</small>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h5>Location</h5>
+                  <p class="mb-0">Nairobi, Kenya</p>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <h5 style="color: var(--light-green);">Connect with me:</h5>
+                <div class="social-links">
+                  <a href="https://github.com/nephyedge" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/nephy-ndwiga" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="mailto:nndwiga@usiu.ac.ke"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <a href="/" class="btn-back">
+                  <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
