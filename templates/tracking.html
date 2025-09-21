@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crop Tracking - AgriTech AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    :root {
+      --primary-green: #2e7d32;
+      --dark-green: #1b5e20;
+      --light-green: #4caf50;
+      --bg-dark: #0a0a0a;
+      --bg-secondary: #1a1a1a;
+      --bg-card: #151515;
+      --text-light: #e0e0e0;
+    }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-secondary) 100%);
+      color: var(--text-light);
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background: rgba(21, 21, 21, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--primary-green);
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', monospace;
+      font-weight: 700;
+      color: var(--light-green) !important;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: var(--text-light) !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--light-green) !important;
+    }
+
+    .main-content {
+      padding-top: 100px;
+      min-height: 100vh;
+    }
+
+    .tracking-card {
+      background: var(--bg-card);
+      border: 1px solid var(--primary-green);
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .tracking-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .tracking-header h1 {
+      font-family: 'Orbitron', monospace;
+      color: var(--light-green);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-coming-soon {
+      text-align: center;
+      padding: 3rem;
+      background: rgba(46, 125, 50, 0.1);
+      border: 2px dashed var(--primary-green);
+      border-radius: 15px;
+    }
+
+    .feature-coming-soon i {
+      font-size: 4rem;
+      color: var(--light-green);
+      margin-bottom: 2rem;
+    }
+
+    .feature-preview {
+      background: rgba(46, 125, 50, 0.1);
+      border: 1px solid var(--primary-green);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-preview h5 {
+      color: var(--light-green);
+      margin-bottom: 1rem;
+    }
+
+    .btn-back {
+      background: var(--primary-green);
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: var(--dark-green);
+      color: white;
+      transform: translateY(-2px);
+    }
+  </style>
+  <body>
+    <!--=======================navbar=====================================================-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <i class="fas fa-seedling"></i> AgriTech AI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/tracking"><i class="fas fa-chart-line"></i> Tracking</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="container">
+        <div class="tracking-header">
+          <h1><i class="fas fa-chart-line"></i> Crop Tracking System</h1>
+          <p class="lead">Monitor and track your crop progress over time</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="feature-coming-soon">
+              <i class="fas fa-tools"></i>
+              <h2 style="color: var(--light-green);">Feature Under Development</h2>
+              <p class="lead">The crop tracking system is currently being developed and will be available soon!</p>
+              <p>This feature will include:</p>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div class="feature-preview">
+                  <h5><i class="fas fa-plus-circle"></i> Add New Crops</h5>
+                  <p>Record new crop plantings with detailed information including crop type, planting date, and initial conditions.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-preview">
+                  <h5><i class="fas fa-chart-bar"></i> Progress Monitoring</h5>
+                  <p>Track crop growth stages, health status, and key milestones throughout the growing season.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-preview">
+                  <h5><i class="fas fa-database"></i> Data Storage</h5>
+                  <p>Secure cloud storage using MongoDB or Firebase to maintain historical crop data and patterns.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-preview">
+                  <h5><i class="fas fa-brain"></i> AI-Powered Insights</h5>
+                  <p>Natural Language Processing to analyze farmer comments and provide intelligent recommendations.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-preview">
+                  <h5><i class="fas fa-calendar-alt"></i> Harvest Predictions</h5>
+                  <p>Predict optimal harvest timing based on crop growth data and environmental conditions.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-preview">
+                  <h5><i class="fas fa-mobile-alt"></i> Mobile Friendly</h5>
+                  <p>Responsive design optimized for field use on mobile devices and tablets.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tracking-card mt-4">
+              <h4 class="text-center" style="color: var(--light-green);">Stay Updated</h4>
+              <p class="text-center">
+                This advanced crop tracking system will integrate with our machine learning recommendation engine 
+                to provide even more accurate and personalized crop suggestions based on your farming history and patterns.
+              </p>
+              <p class="text-center">
+                <strong>Expected Release:</strong> Coming Soon
+              </p>
+            </div>
+
+            <div class="text-center mt-4">
+              <a href="/" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
